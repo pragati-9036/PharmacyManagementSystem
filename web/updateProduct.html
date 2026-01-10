@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Product Stock</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/pharmacybg.jpg'); /* Add a background image */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            line-height: 1.6;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 8px;
+            font-size: 16px;
+            width: 250px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .back-button, .view-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .back-button:hover, .view-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Update Product Stock</h2>
+        <form action="UpdateProductServlet" method="POST">
+            <label for="productId">Product ID:</label>
+            <input type="text" id="productId" name="productId" required><br><br>
+            <label for="newQuantity">New Quantity:</label>
+            <input type="number" id="newQuantity" name="newQuantity" required><br><br>
+            <button type="submit">Update Stock</button>
+                    <!-- View All Products button -->
+        <a href="viewProducts.html" class="view-button">View All Products</a>
+        </form>
+        <a href="products.html" class="back-button">Back to Product Management</a>
+    </div>
+</body>
+</html>
+

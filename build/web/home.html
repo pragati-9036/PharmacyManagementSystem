@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pharmacy Management System</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/pharmacybg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    line-height: 1.6;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #4CAF50;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.sidebar h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar a:hover {
+    background-color: #45a049;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.content h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    margin: 10px 0;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content ul li a:hover {
+    color: #2980b9;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.logout {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.logout:hover {
+    background-color: #e53935;
+}
+</style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>MyPharmacy</h2>
+        <a href="HomePageServlet">Home</a> <!-- Links to the servlet -->
+        <a href="products.html">Product Management</a>
+        <a href="sales.html">Sales Management</a>
+        <a href="ReportServlet">Reports</a>
+        
+        <button class="logout" onclick="window.location.href='LogoutServlet'">Logout</button>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to MyPharmacy</h1>
+        <p>Welcome to the Admin Dashboard of MyPharmacy! From here, you can manage products, view orders, generate reports, and update settings for your pharmacy system.</p>
+
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="products.html">Manage Products</a></li>
+            <li><a href="sales.html">View Sales</a></li>
+            <li><a href="ReportServlet">View Reports</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 MyPharmacy - All rights reserved.</p>
+    </div>
+
+</body>
+</html>

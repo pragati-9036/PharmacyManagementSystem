@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Products - Pharmacy Management System</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/pharmacybg.jpg'); /* Add a background image */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            line-height: 1.6;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        table tbody tr:hover {
+            background-color: #dfe6e9;
+        }
+        .back-button {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>View All Products</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody id="productList">
+            </tbody>
+        </table>
+
+        <a href="products.html" class="back-button">Back to Product Management</a>
+    </div>
+
+    <script>
+        // Fetch products from ViewProductsServlet and populate the table
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("ViewProductsServlet")
+                .then(response => response.json())
+                .then(data => {
+                    const productList = document.getElementById("productList");
+                    productList.innerHTML = ""; // Clear existing rows
+
+                    if (data.length === 0) {
+                        productList.innerHTML = "<tr><td colspan='5'>No products available</td></tr>";
+                    } else {
+                        data.forEach(product => {
+                            const row = document.createElement("tr");
+                            row.innerHTML = `<td>${product.product_id}</td>
+                                             <td>${product.product_name}</td>
+                                             <td>${product.category}</td>
+                                             <td>₹${product.price}</td>
+                                             <td>${product.quantity}</td>`;
+                            productList.appendChild(row);
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error("Error fetching products:", error);
+                    document.getElementById("productList").innerHTML = "<tr><td colspan='5'>Error loading products</td></tr>";
+                });
+        });
+    </script>
+
+</body>
+</html>
