@@ -5,7 +5,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.sql.*;
 
-@WebServlet("/UpdateProductServlet")
+
 public class UpdateProductServlet extends HttpServlet {
     private static final String DB_URL = "jdbc:mysql://localhost:3306/pharmacy_db_ajava?useSSL=false&serverTimezone=UTC";
     private static final String DB_USERNAME = "root";
