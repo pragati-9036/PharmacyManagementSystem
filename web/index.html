@@ -10,20 +10,19 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-image: url('images/pharmacybg.jpg'); /* Set background image */
-            background-size: cover; /* Ensure the image covers the whole page */
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Prevent repeating the background image */
+            background-image: url('images/pharmacybg.jpg'); /* Background stays */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .login-container {
-            background: rgba(255, 255, 255, 0.9); /* Slightly more opaque to make text clear */
+            background: rgba(255, 255, 255, 0.9);
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
             width: 350px;
         }
-      
         .login-container h1 {
             font-size: 26px;
             color: #333;
@@ -41,7 +40,7 @@
         .login-container button {
             width: 100%;
             padding: 12px;
-            background-color: #4CAF50; /* Lime Green Button */
+            background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 4px;
@@ -49,20 +48,16 @@
             font-size: 16px;
         }
         .login-container button:hover {
-            background-color: #45a049; /* Darker green on hover */
+            background-color: #45a049;
         }
         .login-container input[type="text"]:focus,
         .login-container input[type="password"]:focus {
-            border-color: #4CAF50; /* Green border when focused */
+            border-color: #4CAF50;
         }
     </style>
 </head>
 <body>
     <div class="login-container">
-        <div class="logo-container">
-            
-            <h2>MyPharmacy</h2>
-        </div>
         <h1>Admin Login</h1>
         <form action="LoginServlet" method="post">
             <input type="text" name="username" placeholder="Admin Username" required />
@@ -72,6 +67,3 @@
     </div>
 </body>
 </html>
-
-
-
