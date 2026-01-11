@@ -4,7 +4,7 @@ import javax.servlet.http.*;
 import java.sql.*;
 import javax.servlet.annotation.WebServlet;
 
-@WebServlet("/AddProductServlet")
+
 public class AddProductServlet extends HttpServlet {
     
     @Override
