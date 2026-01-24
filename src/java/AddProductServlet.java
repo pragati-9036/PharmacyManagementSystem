@@ -19,13 +19,12 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
     Connection connection = null;
     PreparedStatement preparedStatement = null;
     try {
-        String dbURL = "jdbc:mysql://localhost:3306/pharmacy_db_ajava";
-        String dbUsername = "root";
-        String dbPassword = ""; 
-        Class.forName("com.mysql.cj.jdbc.Driver");
+         String DB_URL = "jdbc:mysql://maglev.proxy.rlwy.net:34443/pharmacy_db_ajava?useSSL=false&serverTimezone=UTC";
+     String DB_USERNAME = "root";
+     String DB_PASSWORD = "qqpGDcFpUwEIxHDXKsplMbfznBdbBEye";
 
         
-        connection = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
+        connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
 
        
         String sql = "INSERT INTO products (product_name, category, quantity, price, expiry_date) VALUES (?, ?, ?, ?, ?)";
@@ -50,7 +49,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
             out.println("<h3>Error inserting product record!</h3>");
             out.println("<a href='products.html'><button>Back to Product Management</button></a>");
         }
-    } catch (SQLException | ClassNotFoundException e) {
+    } catch (SQLException e) {
         response.getWriter().println("<h3>Error: " + e.getMessage() + "</h3>");
         response.getWriter().println("<a href='products.html'><button>Back to Product Management</button></a>");
     } finally {

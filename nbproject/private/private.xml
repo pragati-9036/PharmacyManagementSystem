@@ -3,7 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/src/java/PurchaseServlet.java</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/src/java/ViewProductsServlet.java</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/src/java/DeleteOrderServlet.java</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/src/java/ViewOrdersServlet.java</file>
             <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/web/index.html</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/Dockerfile</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/web/addProduct.html</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/web/deleteProduct.html</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/src/java/DeleteProductsServlet.java</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/src/java/HomePageServlet.java</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/src/java/UpdateProductServlet.java</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/src/java/LogoutServlet.java</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/src/java/LoginServlet.java</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/src/java/ReportServlet.java</file>
+            <file>file:/C:/Users/HP/OneDrive/Dokumen/NetBeansProjects/PharmacyManagementSystem/src/java/AddProductServlet.java</file>
         </group>
     </open-files>
 </project-private>

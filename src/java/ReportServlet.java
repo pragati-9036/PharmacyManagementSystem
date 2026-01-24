@@ -11,10 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 public class ReportServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/pharmacy_db_ajava?useSSL=false&serverTimezone=UTC";
+    private static final String DB_URL =  "jdbc:mysql://maglev.proxy.rlwy.net:34443/pharmacy_db_ajava?useSSL=false&serverTimezone=UTC";
     private static final String DB_USERNAME = "root";
-    private static final String DB_PASSWORD = "";
-
+    private static final String DB_PASSWORD = "qqpGDcFpUwEIxHDXKsplMbfznBdbBEye";
+    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
